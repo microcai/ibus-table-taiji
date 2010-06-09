@@ -1,0 +1,8 @@
+Requirements:
+
+    You need to install ibus-table first; if you want to integrate extra
+    Chinese phrases, you also need to install ibus-table-extraphrase
+    beforehand and pkgconfig in your system.
+
+Introduction:
+    
