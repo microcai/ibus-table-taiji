@@ -25,13 +25,13 @@ if IBUS_TABLE_EXTRA_PHRASES
 createdb += -e @IBUS_TABLE_EXTRAPHRASE@
 endif
 
-tables_DATA = taiji.txt
+tables_DATA = taiji.db
 
 tables_DATA += $(NULL)
 
 tablesdir = $(datadir)/ibus-table/tables
 
-EXTRA_DIST = $(tables_DATA)  \
+EXTRA_DIST = taiji.txt  \
 	$(NULL)
 
 DISTCLEANFILES = \
@@ -41,3 +41,5 @@ DISTCLEANFILES = \
 .txt.db:
 	$(createdb) -n $@ -s $<
 
+clean-local:
+	$(RM) *.db

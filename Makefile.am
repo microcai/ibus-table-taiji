@@ -20,11 +20,9 @@
 
 SUBDIRS = \
 	icons \
-	m4 \
 	tables \
 	$(NULL)
 
-ACLOCAL_AMFLAGS = -I m4
 
 EXTRA_DIST = \
 	autogen.sh \
